@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val apiInterface = ApiClient.client?.create(ApiInterface::class.java)
-        val apiCall = apiInterface?.getList(CHANNEL_ID,API_KEY)
+        val apiCall = apiInterface?.getList(CHANNEL_ID,API_KEY,20)
 
         apiCall?.enqueue(object : Callback<PlayList>{
             override fun onFailure(call: Call<PlayList>, t: Throwable) {
