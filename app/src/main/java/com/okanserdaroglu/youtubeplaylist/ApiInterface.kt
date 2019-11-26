@@ -7,6 +7,8 @@ import retrofit2.http.Query
 
 interface ApiInterface {
 
+    // create an api interface class and add your methods and parameters in it
+
     // https://www.googleapis.com/youtube/v3/playlists?part=snippet&channelId=UCJbPGzawDH1njbqV-D5HqKw&maxResults=50&key=AIzaSyCJ24xaHhO6Y6EW0OjPOqIZPdJ9RC33x-I
 
     @GET("playlists?part=snippet")
